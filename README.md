@@ -2,8 +2,13 @@
 
 A machine-learning application for predicting thunderstorm occurrence from eight atmospheric indices. The project uses a saved scikit-learn K-nearest neighbors model, a FastAPI prediction service, and a Streamlit interface.
 
+## Live Demo
+
+[Open the Thunderstorm Prediction App](https://thunderstorm-forecast-v1.streamlit.app/)
+
 ## Project Structure
 
+- `app.py` - Streamlit Cloud entry point for the deployed app.
 - `streamlit_app/ui.py` - Streamlit interface for entering model features and viewing predictions.
 - `api/main.py` - FastAPI application with the prediction endpoint.
 - `app/predictor.py` - Builds the model input and formats prediction results.
@@ -69,4 +74,4 @@ The response contains `prediction` (the model's predicted class) and `probabilit
 - If the UI reports an API error, make sure the FastAPI server is running at `http://localhost:8000`.
 - If the API cannot load the model, check that `models/KNN_best_model.pkl` exists and start Uvicorn from the project root.
 - The model path is configured in `app/config.py` as a relative path from the project root.
-c      
+  
