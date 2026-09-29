@@ -7,7 +7,12 @@ wheels/
 *.egg-info
 
 # Virtual environments
+.venv
 thenv
 experiments
 
 data copy
+
+
+2.0
+uv.lock
